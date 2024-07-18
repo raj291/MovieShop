@@ -1,0 +1,17 @@
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/bin/Debug/net8.0/MovieShop.Infrastructure.deps.json
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/bin/Debug/net8.0/MovieShop.Infrastructure.runtimeconfig.json
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/bin/Debug/net8.0/MovieShop.Infrastructure.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/bin/Debug/net8.0/MovieShop.Infrastructure.pdb
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/bin/Debug/net8.0/MovieShop.Core.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/bin/Debug/net8.0/MovieShop.Core.pdb
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.csproj.AssemblyReference.cache
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.AssemblyInfoInputs.cache
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.AssemblyInfo.cs
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieSho.4342F073.Up2Date
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/refint/MovieShop.Infrastructure.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.pdb
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.genruntimeconfig.cache
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/ref/MovieShop.Infrastructure.dll

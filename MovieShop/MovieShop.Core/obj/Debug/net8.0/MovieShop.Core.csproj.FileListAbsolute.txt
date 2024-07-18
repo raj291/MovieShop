@@ -1,0 +1,14 @@
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/bin/Debug/net8.0/MovieShop.Core.deps.json
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/bin/Debug/net8.0/MovieShop.Core.runtimeconfig.json
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/bin/Debug/net8.0/MovieShop.Core.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/bin/Debug/net8.0/MovieShop.Core.pdb
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.csproj.AssemblyReference.cache
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.AssemblyInfoInputs.cache
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.AssemblyInfo.cs
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.csproj.CoreCompileInputs.cache
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/refint/MovieShop.Core.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.pdb
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.genruntimeconfig.cache
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/ref/MovieShop.Core.dll
