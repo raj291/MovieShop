@@ -1,13 +1,13 @@
 @model IEnumerable<MovieShop.Core.Entities.Genres>
 
 <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="genreDropdownLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Genres
     </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <ul class="dropdown-menu" aria-labelledby="genreDropdownLink">
         @foreach (var genre in Model)
         {
-            <a class="dropdown-item" asp-controller="Movies" asp-action="MoviesByGenre" asp-route-id="@genre.Id">@genre.Name</a>
+            <li><a class="dropdown-item" href="@Url.Action("Index", "Home", new { genreId = genre.Id })">@genre.Name</a></li>
         }
-    </div>
+    </ul>
 </li>

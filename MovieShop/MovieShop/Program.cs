@@ -16,6 +16,8 @@ builder.Services.AddDbContext<MovieShopDbContext>(options =>
 
 builder.Services.AddScoped<IMovieServices, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<IGenreService, GenreService>();
+builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

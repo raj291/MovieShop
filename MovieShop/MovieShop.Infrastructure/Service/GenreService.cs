@@ -15,6 +15,6 @@ public class GenreService : IGenreService
 
     public async Task<IEnumerable<Genres>> GetAllGenres()
     {
-        return  _genreRepository.GetAllGenres();
+        return await _genreRepository.GetAllGenres();
     }
 }

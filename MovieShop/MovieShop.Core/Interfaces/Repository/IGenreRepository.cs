@@ -4,5 +4,5 @@ namespace MovieShop.Core.Interfaces.Repository;
 
 public interface IGenreRepository : IRepository<Genres>
 {
-    IEnumerable<Genres> GetAllGenres();
+    Task<List<Genres>> GetAllGenres();
 }

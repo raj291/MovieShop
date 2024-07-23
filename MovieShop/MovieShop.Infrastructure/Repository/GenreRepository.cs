@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using MovieShop.Core.Entities;
 using MovieShop.Core.Interfaces.Repository;
 using MovieShop.Infrastructure.Data;
@@ -13,8 +14,8 @@ public class GenreRepository : BaseRepository<Genres>, IGenreRepository
         _movieShopDbContext = movieShopDbContext;
     }
 
-    public IEnumerable<Genres> GetAllGenres()
+    public Task<List<Genres>> GetAllGenres()
     {
-        return _movieShopDbContext.Genres.ToList();
+        return _movieShopDbContext.Genres.ToListAsync();
     }
 }

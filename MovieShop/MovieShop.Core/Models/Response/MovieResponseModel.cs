@@ -37,4 +37,5 @@ public class MovieResponseModel
     
     public List<TrailerResponseModel> Trailers { get; set; }
     public List<CastResponseModel> Casts { get; set; }
+    public List<GenresResponseModel> Genres { get; set; }
 }

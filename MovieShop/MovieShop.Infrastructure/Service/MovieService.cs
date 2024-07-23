@@ -76,6 +76,11 @@ namespace MovieShop.Infrastructure.Service
                         TmdbUrl = mc.Casts.TmdbUrl,
                         Character = mc.Character, 
                     }).ToList(),
+                    // Genres = movie.MovieGenresList.Select(mg => new GenresResponseModel
+                    // {
+                    //     Id = mg.GenreId,
+                    //     Name = mg.Genres.Name
+                    // }).ToList(),
                     Trailers = movie.TrailersList.Select(t => new TrailerResponseModel
                     {
                        MovieId = t.MovieId,
