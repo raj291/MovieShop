@@ -1,31 +1,21 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using MovieShop.Models;
+using MovieShop.Core.Interfaces.Services;
+using System.Threading.Tasks;
 
-namespace MovieShop.Controllers;
+namespace MovieShop.Web.Controllers;
 
-public class HomeController : Controller
-{
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public class HomeController : Controller
     {
-        _logger = logger;
-    }
+        private readonly IMovieServices movieService;
 
-    public IActionResult Index()
-    {
-        return View();
-    }
+        public HomeController(IMovieServices movieService)
+        {
+            this.movieService = movieService;
+        }
 
-    public IActionResult Privacy()
-    {
-        return View();
+        public async Task<IActionResult> Index()
+        {
+            var movies = await movieService.GetAllMovies();
+            return View(movies);
+        }
     }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
-}

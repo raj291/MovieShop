@@ -1,0 +1,128 @@
+@model MovieShop.Core.Models.Response.MovieResponseModel
+<style>
+    .container-fluid.p-0.m-0 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+</style>
+
+@if (Model != null)
+{
+    <div class="container-fluid p-0 m-0" style="width: 100%; height: 45vh; position: relative;">
+        <img src="@Model.BackdropUrl" alt="@Model.Title" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
+        <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.8) 100%);
+        z-index: 0;">
+        </div>
+        <div class="card-img-overlay" style="height: 100%; width: 100%; position: relative; padding: 20px;">
+            <div class="row align-items-start" style="row-gap: 1rem;">
+                <div class="col-md-3">
+                    <img src="@Model.PosterUrl" class="img-fluid" alt="@Model.Title" style="max-height: 40vh;">
+                </div>
+                <div class="col-md-7">
+                    <h1 class="card-title text-white">@Model.Title</h1>
+                    <h6 class="lead text-white">@Model.Tagline</h6>
+                    <div class="row">
+                        <div class="col">
+                            <p class="fw-bold text-secondary">@Model.RunTime | @Model.ReleaseDate.ToString("yyyy")</p>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-wrap">
+                                <p class="badge rounded-pill bg-light text-dark m-1">Action</p>
+                                <p class="badge rounded-pill bg-light text-dark m-1">Adventure</p>
+                                <p class="badge rounded-pill bg-light text-dark m-1">Science Fiction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-text text-white">@Model.Overview</p>
+                </div>
+                <div class="col-md-2 d-flex flex-column align-items-end">
+                    <button class="btn btn-success mb-2 w-100">Buy</button>
+                    <button class="btn btn-outline-info w-100">Write a Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-4">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Movie Facts</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                            Release Date
+                            <span class="badge rounded-pill bg-dark">@Model.ReleaseDate.ToString("MMMM dd, yyyy")</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                            Runtime
+                            <span class="badge rounded-pill bg-dark">@Model.RunTime minutes</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                            Box Office
+                            <span class="badge rounded-pill bg-dark">$@Model.Revenue?.ToString("N0")</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-bottom">
+                            Budget
+                            <span class="badge rounded-pill bg-dark">$@Model.Budget?.ToString("N0")</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Trailers</h3>
+                    <ul class="list-unstyled">
+                        @foreach (var trailer in Model.Trailers)
+                        {
+                            <li class="mb-2">
+                                <a href="@trailer.TrailerUrl" target="_blank" class="text-black">@trailer.Name</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h3>Cast Details</h3>
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Profile</th>
+                    <th scope="col">Character</th>
+                    <th scope="col">Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var cast in Model.Casts)
+                {
+                    <tr>
+                        <td>
+                            <a href="@cast.TmdbUrl" target="_blank">
+                                <img src="@cast.ProfilePath" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;" alt="@cast.Name">
+                            </a>
+                        </td>
+                        <td>@cast.Character</td>
+                        <td>@cast.Name</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    
+
+}
+else
+{
+    <h3>No Movie Found</h3>
+}

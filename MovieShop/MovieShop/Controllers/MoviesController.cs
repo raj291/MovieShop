@@ -1,12 +1,27 @@
 using Microsoft.AspNetCore.Mvc;
+using MovieShop.Core.Interfaces.Services;
+using MovieShop.Core.Models.Response;
 
 namespace MovieShop.Controllers;
 
 public class MoviesController : Controller
 {
-    // GET
-    public IActionResult Index()
+    private readonly IMovieServices services;
+
+    public MoviesController(IMovieServices services)
     {
-        return View();
+        this.services = services;
+    }
+    // GET
+    public async Task<IActionResult> Index(int id)
+    {
+        var movie = await services.GetMovie(id);
+
+        if (movie == null)
+        {
+            return NotFound();
+        }
+
+        return View(movie);
     }
 }

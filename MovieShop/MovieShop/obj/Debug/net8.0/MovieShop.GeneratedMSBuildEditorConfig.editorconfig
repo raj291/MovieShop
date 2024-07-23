@@ -34,8 +34,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/Views/MovieCardModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVDYXJkTW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/Views/Movies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/Views/Shared/_GenreDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19HZW5yZURyb3Bkb3duLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/Views/Shared/_ValidationScriptsPartial.cshtml]

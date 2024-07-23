@@ -169,3 +169,4 @@
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/obj/Debug/net8.0/MovieShop.pdb
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/obj/Debug/net8.0/MovieShop.genruntimeconfig.cache
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/obj/Debug/net8.0/ref/MovieShop.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop/obj/Debug/net8.0/MovieShop.sourcelink.json

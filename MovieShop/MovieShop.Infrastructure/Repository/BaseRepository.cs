@@ -6,22 +6,22 @@ namespace MovieShop.Infrastructure.Repository;
 
 public class BaseRepository<T> : IRepository<T> where T : class
 {
-    private readonly MovieShopDbContext movieShopDbContext;
+    private readonly MovieShopDbContext _movieShopDbContext;
 
     public BaseRepository(MovieShopDbContext movieShopDbContext)
     {
-        this.movieShopDbContext = movieShopDbContext;
+        _movieShopDbContext = movieShopDbContext;
     }
     public int Insert(T entity)
     {
-        movieShopDbContext.Set<T>().Add(entity);
-        return movieShopDbContext.SaveChanges();
+        _movieShopDbContext.Set<T>().Add(entity);
+        return _movieShopDbContext.SaveChanges();
     }
 
     public int Update(T entity)
     {
-        movieShopDbContext.Set<T>().Entry(entity).State = EntityState.Modified;
-        return movieShopDbContext.SaveChanges();
+        _movieShopDbContext.Set<T>().Entry(entity).State = EntityState.Modified;
+        return _movieShopDbContext.SaveChanges();
     }
 
     public int Delete(int id)
@@ -29,7 +29,7 @@ public class BaseRepository<T> : IRepository<T> where T : class
         var entity = GetById(id);
         if (entity != null)
         {
-            movieShopDbContext.Set<T>().Remove(entity);
+            _movieShopDbContext.Set<T>().Remove(entity);
             return 1;
         }
 
@@ -38,11 +38,11 @@ public class BaseRepository<T> : IRepository<T> where T : class
 
     public T GetById(int id)
     {
-        return movieShopDbContext.Set<T>().Find(id);
+        return _movieShopDbContext.Set<T>().Find(id);
     }
 
-    public IEnumerable<T> GetAll()
+    public async Task<IEnumerable<T>> GetAll()
     {
-        return movieShopDbContext.Set<T>().ToList();
+        return _movieShopDbContext.Set<T>().ToList();
     }
 }

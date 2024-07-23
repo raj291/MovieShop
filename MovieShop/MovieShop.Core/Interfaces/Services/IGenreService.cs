@@ -1,6 +1,8 @@
+using MovieShop.Core.Entities;
+
 namespace MovieShop.Core.Interfaces.Services;
 
-public class IGenreService
+public interface IGenreService
 {
-    
+    Task<IEnumerable<Genres>> GetAllGenres();
 }

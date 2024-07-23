@@ -15,3 +15,4 @@
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.pdb
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.genruntimeconfig.cache
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/ref/MovieShop.Infrastructure.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Infrastructure/obj/Debug/net8.0/MovieShop.Infrastructure.sourcelink.json

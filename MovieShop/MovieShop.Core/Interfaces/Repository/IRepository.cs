@@ -6,5 +6,5 @@ public interface IRepository<T> where T:class
     public int Update(T entity);
     public int Delete(int id);
     public T GetById(int id);
-    public IEnumerable<T> GetAll();
+    public Task<IEnumerable<T>> GetAll();
 }

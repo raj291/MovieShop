@@ -12,3 +12,4 @@
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.pdb
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.genruntimeconfig.cache
 /Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/ref/MovieShop.Core.dll
+/Users/rajmahadik/Desktop/Asp.net/MovieShop/MovieShop.Core/obj/Debug/net8.0/MovieShop.Core.sourcelink.json
